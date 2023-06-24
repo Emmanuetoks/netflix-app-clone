@@ -8,6 +8,14 @@ interface NavItemProps {
 }
 export default function NavItem({children, active, href}: NavItemProps) {
     return (
-        <Link href={href} className={`text-base ml-5 ${active ? 'text-white' : 'text-gray-300'} hover:text-gray-400`}>{children}</Link>
+        <Link
+            href={href}
+            className={
+                `text-sm ml-5 transition ease-in-out duration-400
+                ${active ? 'text-white font-medium ' : 'text-n_light_gray-base hover:text-n_light_gray-hover font-normal'}`
+            }
+        >
+            {children}
+        </Link>
     )
 }
