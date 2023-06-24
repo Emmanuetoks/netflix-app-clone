@@ -1,4 +1,5 @@
 import '@/globals.css'
+import NavBar from "@/components/NavBar";
 
 export const metadata = {
   title: 'Netflix clone',
@@ -12,7 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <main>
+          <NavBar />
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
