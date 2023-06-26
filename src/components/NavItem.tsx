@@ -16,12 +16,16 @@ export default function NavItem({
   return (
     <Link
       href={href}
-      className={`${
+      className={`text-sm ${
         role === "header"
-          ? `text-base ml-5 hover:text-gray-400 ${
-              active ? "text-white" : "text-gray-300"
+          ? `ml-5 transition ease-in-out duration-400
+          ${
+            active
+              ? "text-white font-medium "
+              : "text-n_light_gray-base hover:text-n_light_gray-hover font-normal"
+          }
             }`
-          : "text-sm text-[gray] hover:underline"
+          : "text-[gray] hover:underline"
       } `}
     >
       {children}

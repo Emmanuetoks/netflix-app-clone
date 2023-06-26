@@ -65,11 +65,11 @@ const Footer = () => {
           <Link href="https://www.facebook.com/netflix/" target="_blank">
             <Image src={facebookLogo} width={30} height={30} alt="facebook" />
           </Link>
-          <Link href="https://www.facebook.com/netflix/" target="_blank">
+          <Link href="https://www.instagram.com/Netflix/" target="_blank">
             <Image src={instagramLogo} width={30} height={30} alt="instagram" />
           </Link>
-          <Link href="https://www.facebook.com/netflix/" target="_blank">
-            <Image src={youtubeLogo} width={30} height={30} alt="instagram" />
+          <Link href="https://www.youtube.com/@Netflix" target="_blank">
+            <Image src={youtubeLogo} width={30} height={30} alt="youtube" />
           </Link>
         </div>
         <ul className="mb-9  grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-12 2sm:gap-x-32 md:gap-x-12 2md:gap-x-16 lg:gap-x-24">
