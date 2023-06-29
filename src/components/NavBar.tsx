@@ -1,7 +1,8 @@
-'use client'
+"use client";
 
 import Logo from "@/components/Logo";
 import NavItem from "@/components/NavItem";
+
 import {usePathname} from "next/navigation";
 import {useEffect, useState} from "react";
 
@@ -60,16 +61,14 @@ export default function NavBar() {
                 <div className="flex p-0">
                     {
                         navItems.map((navItem) => (
-                            <NavItem href={navItem.href} key={navItem.href} active={pathName === navItem.href}>{navItem.label}</NavItem>
+                            <NavItem href={navItem.href} key={navItem.href} active={pathName === navItem.href} role="header">{navItem.label}</NavItem>
                         ))
                     }
                 </div>
             </div>
 
-            {/* Search, notifications & profile */}
-            <div>
-
-            </div>
-        </nav>
-    )
+      {/* Search, notifications & profile */}
+      <div></div>
+    </nav>
+  );
 }
